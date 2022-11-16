@@ -14,8 +14,7 @@ import java.util.Scanner;
  * Counts comparisons made when merging the arrays
  * The mergesort comparison count for increasing and decreasing arrays is lower than the count for random arrays
  * This is due to less comparisons being needed when merging because the arrays are already sorted
- * All of the comparison counts for mergesort are well below O(n log n)
- * This might be due to where I chose to count comparisons at
+ * All of the comparison counts for mergesort are below O(n log n)
  * Mergesort is also by far the most efficient of the 3 sorts
  */
 

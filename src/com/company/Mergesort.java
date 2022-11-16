@@ -68,14 +68,11 @@ public class Mergesort {
         int[] arrOne = new int[arrOneSize];
         int[] arrTwo = new int[arrTwoSize];
 
-        if(unsorted.length > 0)
-        {
-            arrOne = Arrays.copyOfRange(unsorted, 0, arrOneSize);
-            arrTwo = Arrays.copyOfRange(unsorted, arrOneSize + 1, unsorted.length);
+        System.arraycopy(unsorted, 0, arrOne, 0, arrOneSize);
+        System.arraycopy(unsorted, arrOneSize, arrTwo, 0, arrTwoSize);
 
-            arrOne = Sort(arrOne);
-            arrTwo = Sort(arrTwo);
-        }
+        arrOne = Sort(arrOne);
+        arrTwo = Sort(arrTwo);
 
         return Merge(arrOne, arrTwo);
     }
